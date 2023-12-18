@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hej David</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="openModal" id="openModal">Open</button>
+
+    <div
+      aria-describedby="description"
+      aria-labelledby="modalTitle"
+      role="dialog"
+      class="accessibleModal"
+      id="accessibleModal"
+    >
+      <h2 id="modalTitle">Some Example</h2>
+      <p id="description">Some text</p>
+      <button id="closeModalBtn">Close</button>
+    </div>
+
+    <button class="openDialog" id="openDialog">David</button>
+
+    <dialog id="accessibleDialog">
+      <h2>A text to read &lt;dialog&gt;</h2>
+      <p>Some random text</p>
+      <button id="closeDialogBtn">Close</button>
+    </dialog>
+    <button aria-haspopup="navigation" aria-expanded="false" id="navButton">
+      Navigation
+    </button>
+    <nav aria-controls="navButton" id="navContent" class="navContent">
+      <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">777</a></li>
+      </ul>
+      <button id="closeNavBtn" class="closeButton">Close</button>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>
